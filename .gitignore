@@ -1,0 +1,53 @@
+# Runtime inputs, intermediate data and reconstruction results
+/workspace/
+/data/
+/ds/
+/outputs/
+/output/
+/results/
+/logs/
+**/exp_results/
+**/wandb/
+**/tensorboard/
+**/results/
+**/outputs/
+**/.cache/
+/third_party/DiffuEraser/data/
+
+# Secrets
+/conf/api_keys.env
+.env
+*.key
+
+# Model weights and licensed body models
+*.pth
+*.pt
+*.ckpt
+*.safetensors
+*.onnx
+*.pkl
+/third_party/DiffuEraser/weights/**
+!/third_party/DiffuEraser/weights/README.md
+/third_party/PartField/model/**
+!/third_party/PartField/model/README.md
+/third_party/foundationpose/weights/**
+!/third_party/foundationpose/weights/README.md
+/third_party/body_models/**
+!/third_party/body_models/README.md
+!/third_party/WiLoR/mano_data/mano_mean_params.npz
+
+# Python/native build outputs
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+build/
+dist/
+
+# Editor/OS files
+.vscode/
+.idea/
+.DS_Store
